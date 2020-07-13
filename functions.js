@@ -16,34 +16,66 @@ const READLINE = require("readline-sync");
   Challenge 1: Let's try to write some basic functions.
 -------------------------------------------- */
 
- console.log("------------------- Challenge 1 -------------------")
+ console.log("------------------- Challenge 1 -------------------");
 
 // **** Challenge 1: Problem 1 ****
 // Write a function called printMessage() that prints any message you want.
+
+function printMessage(){
+	console.log("Hello, how are you doing?");
+};
+
 
 
 // **** Challenge 1: Problem 2 ****
 // Write a function called printFiveMessages() that calls printMessage() five times.
 
+function printFiveMessage(){
+	printMessage();
+	printMessage();
+	printMessage();
+	printMessage();
+	printMessage();
+};
 
 // **** Challenge 1: Problem 3 ****
 // Write a function called getUserInput() that asks the user if they'd like to print your message
 // once or five times. Then call one of the two functions above based on what the user decides.
 
+function getUserInput(){
+	var m = READLINE.question(`Do you want to see one or five messages?`)
+};
+if (m=1){
+	printMessage();
+};
+if (m=5){
+	printFiveMessage();
+};
+
+getUserInput();
 
 // **** Challenge 1: Problem 4 ****
 // Write a function called printGreeting() that prints a greeting message to the user.
 
+function printGreeting(){
+	console.log("Hello!")
+};
 
 // **** Challenge 1: Problem 5 ****
 // Write a function called printClosing() that prints a goodbye message to the user.
 
+function printClosing(){
+	console.log("Goodbye!")
+}
 
 // **** Challenge 1: Problem 6 ****
 // Write a function called run() that greets the user, asks them for input, and sends a goodbye message.
 // Remember! Use the functions that you've already made. Don't hardcode anything!
 
-
+function run(){
+	printGreeting()
+	var name= READLINE.question("What is your name?")
+}
 
 /* -------------------------------------------- 
 

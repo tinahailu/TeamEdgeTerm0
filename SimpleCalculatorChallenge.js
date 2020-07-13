@@ -12,6 +12,7 @@
   -------------------------------------------- */
 
   console.log(`My Simple Calculator`);
+  console.log(`Here`)
 
 /* -------------------------------------------- 
 
@@ -29,28 +30,35 @@ Part 1:
 
 // Write a function called addNumbers that will take two numbers and return the sum.
 
+function addNumbers(num1, num2){
+	var sum = num1 + num2
+	return sum
+}
 
-
-
+console.log(addNumbers(3,4))
 
 
 
 // Write a function called subNumbers that will take two numbers and return the difference.
 
+function subNumbers(num1, num2){
+	var difference = num1 - num2
+	return difference
+}
 
-
-
+console.log(subNumbers(10,5))
 
 /*------------*/
 // Testing Code - Uncomment the code below to test your code!
 
-// checkAnswers(addNumbers(5, 15), 20); 
-// checkAnswers(addNumbers(3, 18), 21);
-// checkAnswers(addNumbers(12, 28), 40); 
+checkAnswers(addNumbers(5, 15), 20);
+checkAnswers(addNumbers(3, 18), 21);
+checkAnswers(addNumbers(12, 28), 40);
 
-// checkAnswers(subNumbers(18, 7), 11);
-// checkAnswers(subNumbers(11, 9), 2);
-// checkAnswers(subNumbers(18, 21), -3);
+
+checkAnswers(subNumbers(18, 7), 11);
+checkAnswers(subNumbers(11, 9), 2);
+checkAnswers(subNumbers(18, 21), -3);
 
 /* -------------------------------------------- 
 
@@ -68,16 +76,22 @@ Part 2:
 
 // Write a function called multiplyNumbers that will take two numbers and return the product.
 
+function multiplyNumbers(num1, num2){
+	var product = num1 * num2
+	return product
+}
 
-
-
+console.log(multiplyNumbers(2,3))
 
 
 // Write a function called divideNumbers that will take two numbers and return the quotent.
 
+function divideNumbers(num1, num2){
+	var quotent = num1/num2
+	return quotent
+}
 
-
-
+console.log(divideNumbers(14,2))
 
 
 /*------------*/

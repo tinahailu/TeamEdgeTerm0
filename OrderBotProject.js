@@ -40,15 +40,41 @@ Remember! Functions are meant to be reusable, so write a function that will work
 
 -------------------------------------------- */
 
+function getUserInput(){
+	let yourName = READLINE.question("Enter your name:")
+console.log("my name is" + yourName)
 
+let theirName = READLINE.question("Enter your friend's name:")
+console.log("my name is" + theirName)
 
+let anotherName = READLINE.question("Enter your other friend's name:")
+console.log("my name is" + anotherName)
 
+let yourMealPrice = READLINE.question("Enter the price of your meal:")
+console.log("the price is" + yourMealPrice)
 
+let theirMealPrice = READLINE.question("Enter the price of their meal:")
+console.log("the price is" + theirMealPrice)
 
+let anotherMealPrice = READLINE.question("Enter the price of the other meal:")
 
+let yourDrinkPrice = READLINE.question("Enter the price of your drink:")
+console.log("the price is" + yourDrinkPrice)
 
+let theirDrinkPrice = READLINE.question("Enter the price of their drink:")
+console.log("the price is" + theirDrinkPrice)
 
+let anotherDrinkPrice = READLINE.question("Enter the price of the other drink:")
+console.log("the price is" + anotherDrinkPrice)
 
+console.log(addNumber( yourMealPrice, yourDrinkPrice, theirMealPrice, theirDrinkPrice, anotherMealPrice, anotherDrinkPrice))
+}
+
+function addNumber(yourMealPrice, yourDrinkPrice, theirMealPrice, theirDrinkPrice , anotherMealPrice, anotherDrinkPrice){
+var cost = parseInt(yourMealPrice) + parseInt(yourDrinkPrice) + parseInt(theirMealPrice) + parseInt(theirDrinkPrice) + parseInt(anotherMealPrice) + parseInt(anotherDrinkPrice)
+return cost 
+}
+getUserInput()
 
 
 /* -------------------------------------------- 
@@ -65,11 +91,24 @@ Remember! Functions are meant to be reusable, so write a function that will work
 
 -------------------------------------------- */
 
+function getUserInput(){
+	let tip1 = READLINE.question("How much do you want to tip?")
+console.log("I am going to give" + tip1)
 
+let tip2 = READLINE.question("How much do they want to tip?")
+console.log("I am going to give" + tip2)
 
+let tip3 = READLINE.question("How much does the other one want to tip?")
+console.log("I am going to give" + tip3)
 
+console.log(addNumber(yourMealPrice, yourDrinkPrice, tip1, theirMealPrice, theirDrinkPrice, tip2, anotherMealPrice, anotherDrinkPrice, tip3))
+}
 
-
+function addNumber(yourMealPrice, yourDrinkPrice, tip1, theirMealPrice, theirDrinkPrice, tip2, anotherMealPrice, tip3, anotherDrinkPrice){
+var totalCost = (parseInt(yourMealPrice) + parseInt(yourDrinkPrice) + parseInt(tip1) + parseInt(theirMealPrice) + parseInt(theirDrinkPrice) + parseInt(tip2) + parseInt(anotherMealPrice) + parseInt(anotherDrinkPrice) + parseInt(tip3)) * parseInt(.0925)
+return totalCost 
+}
+getUserInput()
 
 
 
@@ -113,3 +152,5 @@ How many of these upchallenges can you implement?
 - Implement a rewards system (stamp cards, buy one get one, etc)
 
 -------------------------------------------- */
+
+
