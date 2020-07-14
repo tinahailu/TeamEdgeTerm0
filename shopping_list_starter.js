@@ -31,14 +31,16 @@ You can type 'add milk' to add milk to your shopping list. \n
 or you can type 'remove milk' to remove it. \n`
 
 console.log(welcomeMessage)
-
+console.log("hello")
 
 //-->Todo: declare a shoppingList array
 
+let shoppingList = ["Milk", "Cereal", "Juice", "Chips", "Tomatoes", "Bread"]
 
 while(active){
-
-    checkAnswer(promptUser()) //this makes the program continously prompt and check response while the boolean 'active' returns true
+    let reply = promptUser()
+    //console.log(reply)
+    checkAnswer(reply) //this makes the program continously prompt and check response while the boolean 'active' returns true
 
 }
 
@@ -50,17 +52,36 @@ function promptUser(){
 
 }
 
-function checkAnswer(){
+function checkAnswer(reply){ 
+    //console.log(reply)
+    let userReply = reply.split(" ")
+    
+if ((userReply[0]) === "add"){
+//addItem()
+addItem(reply)
 
+}  else if (userReply[0] = "remove"){
+    removeItem()
+}
 
 }
 
-function addItem(){
+function addItem(reply){
+    console.log(reply)
+    console.log("addItem")
+    console.log(shoppingList)
+shoppingList.push(reply)
+console.log(shoppingList)
+}
+
 //this function can take in a string and store it in an array
 
-}
 
-function removeItem(){
-
+function removeItem(reply){
+    console.log(reply)
+    console.log("removeItem")
+    console.log(shoppingList)
+  shoppingList.pop(reply)
+  console.log(shoppingList)
 
 }
