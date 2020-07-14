@@ -27,7 +27,14 @@ for(let i = 0 ; i <=10 ; i++) {
    
    }
 
+
 //-->TODO: Write a loop that prints a happy birthday message for every year you have been alive.
+
+for(let i =1; i<=15; i++){
+    console.log("happy birthday" + i)
+}
+
+
 
 
 
@@ -96,6 +103,7 @@ if(random % 2 == 0){
 
 
 //-->TODO: Write a function that counts BACKWARDS from the given random number and logs only even numbers
+
 
 
 console.log("------------------- CHALLENGE 5 : Finder ------------------")

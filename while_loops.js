@@ -41,6 +41,22 @@ console.log("example counter--> " + num)
 num++
 }
 //-->TODO: Declare a while loop that prints all the prime numbers between 0 and 1000
+function isPrime(value) {
+    for(var i = 2; i < value; i++) {
+        if(value % i === 0) {
+            return false;
+        }
+    }
+    return value > 1;}
+
+let num1= 0
+while(num1 <= 1000){
+        if(isPrime(num1)){
+            console.log(num1)
+        }
+        num1++
+}
+
 
 
 
@@ -51,8 +67,16 @@ let items = ["pencil" , "eraser" , "mirror" , "comb" , "spoon" , "key" , "earrin
 
 //-->TODO: Use a while loop to search the contents of an array for the key! If it exists, print "found the key!"
 
-
-
+var i = 0
+var keyFound = false
+while(!keyFound){
+    console.log("" + items[i])
+    if(items[i] == "key"){
+        console.log("found the key!")
+        keyFound = true
+    }
+    i++
+} 
 
 
 console.log("------------------- CHALLENGE 3 : BUGGIN   -------------------")
@@ -64,13 +88,14 @@ console.log("------------------- CHALLENGE 3 : BUGGIN   -------------------")
 
 function evenNumbersToFifty(){
 
-    let num = 50
-    while(num <50){
-
-        console.log("number: " + num)
+    let i = 1
+    while(i <=50){
+        if(i%2 == 0){
+            console.log("number " + i)
+        }
 
     }
-}
+} 
 evenNumbersToFifty()
 
 //-->TODO: Make this design  below
