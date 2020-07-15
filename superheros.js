@@ -19,11 +19,11 @@
 
 console.log("-------------------  SUPERHERO !!  -------------------")
 
-const DELAY = 3000
-const DAMAGE_LIMIT = 5
-const MAJOR_BLOW = DAMAGE_LIMIT -2
-const LIVES_TOP_RANGE = 60
-const LIVES_BOTTOM_RANGE = 40
+const DELAY = 1000
+const DAMAGE_LIMIT = 10
+const MAJOR_BLOW = DAMAGE_LIMIT -10
+const LIVES_TOP_RANGE = 40
+const LIVES_BOTTOM_RANGE = 20
 let rounds = 1
 let gameIsOn = true
 

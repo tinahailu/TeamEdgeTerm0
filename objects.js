@@ -32,6 +32,35 @@ let object = {
         this.isEmpty =true
     }
 }
+
+let smartPhone = {
+    screen: "resolution bla blah",
+    brand: "samsung",
+    camera: 14,
+    isNew: false,
+    isCracked: true,
+    features: ["front-face cam", "bluetooth"],
+
+    saveData(){
+        console.log("your data was saved")
+    },
+
+    fixedPhone(){
+       this.isCracked = false
+   },
+
+   //removeFromApps(item){
+       //itemIndex = this.apps,IndexOf(item)
+       //this.apps.slice(itemIndex, 1)
+       //console.log(`${item} was removed`)
+   //}
+
+
+}
+smartPhone.color = "black"
+console.log(smartPhone.color)
+
+
 //working with the object:
 object.length = 12
 object.width = 8
@@ -47,9 +76,29 @@ console.log(object)
 
 //*********************************  MY OBJECT *************************** */
 
+let computer = {
+    screen: "display",
+    brand: "Mac",
+    model: "Catalina",
+    isNew: true,
+    yearMade: 2019,
+    input: ["mouse", "keyboard"],
 
+    saveData(){
+        console.log("your data was saved")
+    },
 
+    newToOld(){
+        this.isNew = false
+    },
+    
+    addInput(i){
+        this.input.push(i)
+    }
 
+}
+
+console.log(computer.brand)
 
 
 //************************************************************************* */
@@ -59,20 +108,43 @@ console.log(object)
 console.log("------------------- CHALLENGE 2 : MODIFY   -------------------")
 
 //-->TODO: Log your object you created above
-
+console.log(computer.model)
 
 //-->TODO: Update the object you just created  by adding new properties and values, including array elements, in this section.
+
+computer.color = "grey"
+console.log(computer.color)
+
+computer.input.push("display")
+
+smartPhone.serialNum = 123456
+smartPhone.apps = ["pinterest", "youtube"]
+console.log(smartPhone.serialNum)
+console.log(smartPhone.apps)
+
+//smartPhone.removeFromApps("youtube")
+//console.log(smartPhone.removeFromApps)
 
 
 //-->TODO: Log your object again and observe changes
 
+console.log(computer.input)
 
 console.log("------------------- CHALLENGE 3 : METHOD   -------------------")
 
 //-->TODO: Add at least two methods (object functions) to your object defined in Challenge 1 and invoke them here.
 //          Make your methods update your variables, or add a random number to an array, etc.
 
+computer.saveData()
+computer.addInput("touchscreen")
+console.log(computer.input)
+
+console.log(smartPhone.isCracked)
+smartPhone.fixedPhone()
+console.log(smartPhone.isCracked)
 
 console.log("------------------- CHALLENGE 4 : LITERALLY   -------------------")
 
 //-->TODO: Put it all together using a string literal to tell the story of your object!
+
+console.log(`I have a smartphone that is ${smartPhone.brand}. Its serial number is ${smartPhone.serialNum}.`)
