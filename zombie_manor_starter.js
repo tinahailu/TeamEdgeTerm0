@@ -45,7 +45,19 @@ let rooms = [] //push any new rooms you create to this array
    bathroom.objects = ["towel" , "toothbrush", "toilet Paper", "soap"]
    bathroom.paths =["Kitchen"]
 
-rooms.push(kitchen, bathroom) //add the rooms to the rooms array
+   let backyard = new Room()
+   backyard.name= "Backyard"
+   backyard.description= "You are in the backyard. There are zombie bodies on the grass."
+   backyard.objects= ["shovel", "bat", "key"]
+   backyard.paths= ["Kitchen", "Bathroom", "Living Room"]
+
+   let livingRoom = new Room()
+   livingRoom.name= "Living Room"
+   livingRoom.description= "You are in the backyard. There are zombie bodies on the grass."
+   livingRoom.objects= ["flashlight", "television", "pillow"]
+   livingRoom.paths= ["Kitchen", "Bathroom", "Backyard"]
+
+rooms.push(kitchen, bathroom, backyard, livingRoom) //add the rooms to the rooms array
  
 //************* START GAME *************************
 function start(){
