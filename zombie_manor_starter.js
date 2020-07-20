@@ -43,7 +43,7 @@ let rooms = [] //push any new rooms you create to this array
    bathroom.name= "Bathroom"
    bathroom.description ="You are in a Bathroom. Everything is a mess. There is blood on the floor. The shower is still on... "
    bathroom.objects = ["towel" , "toothbrush", "toilet Paper", "soap"]
-   bathroom.paths =["Kitchen"]
+   bathroom.paths =["Kitchen", "Living Room", "Backyard"]
 
    let backyard = new Room()
    backyard.name= "Backyard"
